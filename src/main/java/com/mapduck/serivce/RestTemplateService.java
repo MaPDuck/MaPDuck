@@ -21,8 +21,6 @@ import java.util.List;
 @Service
 @Slf4j
 public class RestTemplateService {
-
-
     /**
      * 작성자 : 강동연
      * 작성일 : 2021.10.31
@@ -36,15 +34,13 @@ public class RestTemplateService {
         // uri 빌드
         URI uri = UriComponentsBuilder
                 .fromUriString("http://localhost:8000")
-                .path("/api/danawa/result")
+                .path("/api/danawa/products")
                 .queryParam("keyword",keyword)
                 .encode(Charset.defaultCharset())
                 .build()
                 .toUri();
 
         log.info("uri: {}", uri.toString());
-
-
 
 
         RestTemplate restTemplate = new RestTemplate();

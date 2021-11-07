@@ -7,14 +7,17 @@ import lombok.*;
 /**
  * 작성자: 강동연
  * 작성일: 2021.11.3
- * 설명: UserDto
+ * 설명: MemberDto
+ *
+ * 수정일 : 2021.11.07
+ * 수정사항: UserDto -> MemberDto
  */
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class) // camelCase to snake
-public class UserDto {
+public class MemberDto {
 
     @NonNull
     private String name;

@@ -14,14 +14,17 @@ import javax.persistence.Id;
 /**
  * 작성자: 강동연
  * 작성일: 2021.11.3
- * 설명: User Entity
+ * 설명: Member Entity
+ *
+ * 수정일 : 2021.11.07
+ * 수정사항: User -> Member
  */
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // pk를 db에서 알아서 해준다.
